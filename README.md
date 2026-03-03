@@ -8,7 +8,7 @@ This is an independent implementation for the R community, inspired by the Pytho
 
 ## Install
 
-CRAN (after acceptance):
+CRAN:
 
 ```r
 install.packages("optbinningR")
