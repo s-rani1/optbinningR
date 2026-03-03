@@ -1,0 +1,14 @@
+{
+  "python_status": "OPTIMAL",
+  "r_status": "FITTED",
+  "python_splits": [11.425, 12.33, 13.095, 13.705, 15.045, 16.925],
+  "r_splits": [11.425, 12.33, 13.095, 13.705, 15.045, 16.925],
+  "split_count_equal": true,
+  "split_abs_diff_aligned": [1.9073e-07, 7.6294e-08, 2.0981e-07, 7.6294e-08, 7.6294e-08, 1.9073e-07],
+  "iv_python": 5.0439,
+  "iv_r": 5.0439,
+  "iv_abs_diff": 0,
+  "n_bins_python": 7,
+  "n_bins_r": 7,
+  "solver": "native"
+}

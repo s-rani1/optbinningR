@@ -1,0 +1,115 @@
+{
+  "generated_at": "2026-03-03 00:00:54.893221",
+  "summary": {
+    "binary_core": "Supported (native parity verified)",
+    "multiclass_core": "Supported (native parity verified)",
+    "continuous_core": "Supported (native parity verified)"
+  },
+  "rows": [
+    {
+      "section": "Optimal binning tutorials",
+      "tutorial": "optimal binning with binary target",
+      "status": "Supported (native parity verified)"
+    },
+    {
+      "section": "Optimal binning tutorials",
+      "tutorial": "optimal binning with binary target - LocalSolver",
+      "status": "Supported (LocalSolver API path implemented; engine unavailable in current environment)"
+    },
+    {
+      "section": "Optimal binning tutorials",
+      "tutorial": "optimal binning with binary target - large scale",
+      "status": "Supported (large_scale profile implemented and parity-validated)"
+    },
+    {
+      "section": "Optimal binning tutorials",
+      "tutorial": "optimal binning with continuous target",
+      "status": "Supported (native parity verified)"
+    },
+    {
+      "section": "Optimal binning tutorials",
+      "tutorial": "optimal binning with multiclass target",
+      "status": "Supported (native parity verified)"
+    },
+    {
+      "section": "Binning process tutorials",
+      "tutorial": "Binning process with sklearn Pipeline",
+      "status": "Supported (native BinningProcess API implemented in R)"
+    },
+    {
+      "section": "Binning process tutorials",
+      "tutorial": "FICO Explainable Machine Learning Challenge",
+      "status": "Supported (FICO end-to-end workflow implemented; python parity check added)"
+    },
+    {
+      "section": "Binning process tutorials",
+      "tutorial": "FICO Explainable Machine Learning Challenge - Updating Binning",
+      "status": "Supported (native update_binning_process workflow implemented in R)"
+    },
+    {
+      "section": "Binning process tutorials",
+      "tutorial": "Telco customer churn",
+      "status": "Supported (Telco churn workflow implemented; python parity check added)"
+    },
+    {
+      "section": "Scorecard tutorials",
+      "tutorial": "Scorecard with binary target",
+      "status": "Supported (native binary Scorecard API implemented in R)"
+    },
+    {
+      "section": "Scorecard tutorials",
+      "tutorial": "Scorecard with continuous target",
+      "status": "Supported (native continuous Scorecard API implemented in R)"
+    },
+    {
+      "section": "Scorecard tutorials",
+      "tutorial": "Scorecard monitoring",
+      "status": "Supported (native scorecard_monitoring implemented in R)"
+    },
+    {
+      "section": "Scorecard tutorials",
+      "tutorial": "Counterfactual explanations for scorecard with binary target",
+      "status": "Supported (native counterfactual_scorecard implemented in R)"
+    },
+    {
+      "section": "Scorecard tutorials",
+      "tutorial": "Counterfactual explanations for scorecard with continuous target",
+      "status": "Supported (native counterfactual_scorecard implemented in R)"
+    },
+    {
+      "section": "Optimal piecewise binning tutorials",
+      "tutorial": "optimal piecewise binning with binary target",
+      "status": "Supported (native OptimalPWBinning binary API implemented in R)"
+    },
+    {
+      "section": "Optimal piecewise binning tutorials",
+      "tutorial": "optimal piecewise binning with continuous target",
+      "status": "Supported (native OptimalPWBinning continuous API implemented in R)"
+    },
+    {
+      "section": "Optimal binning for batch and streaming data processing",
+      "tutorial": "optimal binning sketch with binary target",
+      "status": "Supported (native OptimalBinningSketch API implemented in R)"
+    },
+    {
+      "section": "Optimal binning for batch and streaming data processing",
+      "tutorial": "optimal binning sketch with binary target using PySpark",
+      "status": "Not yet (PySpark integration not implemented)"
+    },
+    {
+      "section": "Optimal binning under uncertainty",
+      "tutorial": "optimal binning with binary target under uncertainty",
+      "status": "Supported (native OptimalBinningUncertainty API implemented in R)"
+    },
+    {
+      "section": "Optimal binning 2D",
+      "tutorial": "optimal binning 2D with binary target",
+      "status": "Supported (native OptimalBinning2D binary API implemented in R)"
+    },
+    {
+      "section": "Optimal binning 2D",
+      "tutorial": "optimal binning 2D with continuous target",
+      "status": "Supported (native OptimalBinning2D continuous API implemented in R)"
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+---
+title: "Getting Started with optbinningR"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Getting Started with optbinningR}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+```
+
+```{r}
+library(optbinningR)
+
+x <- c(10, 12, 13, 18, 20, 21, 35, 38, 40, 45)
+y <- c(0, 0, 0, 0, 1, 1, 0, 1, 1, 1)
+
+ob <- OptimalBinning(name = "feature_1")
+ob <- fit(
+  ob,
+  x,
+  y,
+  algorithm = "optimal",
+  max_n_bins = 5,
+  max_n_prebins = 10,
+  min_bin_size = 0.1,
+  monotonic_trend = "auto"
+)
+
+print(ob)
+binning_table(ob)
+transform(ob, x)
+```
+
+## Multiclass Tutorial Mapping
+
+This section maps the Python multiclass tutorial flow to equivalent `optbinningR` calls.
+
+```{r}
+library(optbinningR)
+
+wine <- read.csv(
+  system.file("extdata", "wine_multiclass.csv", package = "optbinningR"),
+  check.names = FALSE
+)
+
+x_mc <- wine[["ash"]]
+y_mc <- wine[["target"]]
+```
+
+### 1) Create and fit multiclass model
+
+Python tutorial equivalent:
+
+- `MulticlassOptimalBinning(...)`
+- `fit(...)`
+
+R:
+
+```{r}
+ob_mc <- MulticlassOptimalBinning(name = "ash", dtype = "numerical")
+ob_mc <- fit(
+  ob_mc,
+  x = x_mc,
+  y = y_mc,
+  algorithm = "optimal",
+  solver = "cp",
+  prebinning_method = "cart",
+  max_n_bins = 6,
+  max_n_prebins = 20,
+  min_bin_size = 0.05,
+  monotonic_trend = list("ascending", "auto", "none"),
+  min_event_rate_diff = 0.00,
+  max_pvalue = 0.95,
+  max_pvalue_policy = "consecutive",
+  user_splits = c(2.15, 2.25, 2.31, 2.60, 2.65),
+  user_splits_fixed = rep(TRUE, 5),
+  verbose = FALSE
+)
+
+ob_mc$status
+ob_mc$splits
+```
+
+### 2) Build and inspect binning table
+
+Python tutorial equivalent:
+
+- `binning_table = optb.binning_table.build()`
+- `optb.information(...)`
+- `binning_table.analysis()`
+
+R:
+
+```{r}
+bt_mc <- binning_table(ob_mc)
+head(build(bt_mc))
+
+information(ob_mc, print_level = 1)
+analysis(ob_mc)
+```
+
+### 3) Plot multiclass binning table
+
+Python tutorial equivalent:
+
+- `binning_table.plot()`
+- `binning_table.plot(show_bin_labels=True)`
+
+R:
+
+```{r, fig.width=7.6, fig.height=4.9}
+plot(ob_mc, metric = "event_rate", style = "bin", add_special = TRUE, add_missing = TRUE)
+```
+
+```{r, fig.width=7.6, fig.height=4.9}
+plot(
+  ob_mc,
+  metric = "event_rate",
+  style = "bin",
+  add_special = TRUE,
+  add_missing = TRUE,
+  show_bin_labels = TRUE
+)
+```
+
+### 4) Transform values
+
+Python tutorial equivalent:
+
+- `optb.transform(x, metric="bins")`
+
+R:
+
+```{r}
+bin_ids <- transform(ob_mc, x_mc, metric = "bins")
+head(bin_ids)
+```

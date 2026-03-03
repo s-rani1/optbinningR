@@ -1,0 +1,29 @@
+Package: optbinningR
+Type: Package
+Title: Optimal Binning for Credit Scoring and Risk Modeling
+Version: 0.2.0
+Authors@R: c(
+    person(given = "Sahaj", family = "Team", role = c("aut", "cre"), email = "maintainer@example.com")
+    )
+Description: An R interface for optimal binning workflows inspired by the Python
+    optbinning package. It provides native R APIs for binary, multiclass and
+    continuous optimal binning, including BinningProcess and a binary Scorecard
+    workflow.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Depends:
+    R (>= 4.1.0)
+Imports:
+    stats,
+    utils
+Suggests:
+    testthat (>= 3.0.0),
+    jsonlite,
+    lintr,
+    covr
+Config/testthat/edition: 3
+URL: https://github.com/s-rani1/optbinningR
+BugReports: https://github.com/s-rani1/optbinningR/issues

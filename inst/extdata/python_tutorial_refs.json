@@ -1,0 +1,36 @@
+{
+  "localsolver_breast_cancer": {
+    "engine_available": false,
+    "error": "ValueError: not enough values to unpack (expected 6, got 5)"
+  },
+  "large_scale_synth": {
+    "status": "OPTIMAL",
+    "splits": [
+      -1.6585291482491265,
+      -1.043069261923347,
+      -0.3841753815416065,
+      0.002776555953214,
+      0.5251904128667341,
+      1.0286942853474375,
+      1.65796421148112
+    ],
+    "event_rate_core": [
+      0.1144,
+      0.208,
+      0.313,
+      0.4189333333333333,
+      0.5256,
+      0.636,
+      0.7884,
+      0.88
+    ],
+    "iv_total": 0.7896709715938971
+  },
+  "fico_workflow": {
+    "train_auc": 0.7543168900207421,
+    "update_auc": 0.7398568633508393
+  },
+  "telco_workflow": {
+    "test_auc": 0.6641572084901746
+  }
+}

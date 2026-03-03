@@ -1,0 +1,24 @@
+{
+  "localsolver": {
+    "engine_available": false,
+    "split_count_equal": false,
+    "split_abs_diff": [],
+    "iv_abs_diff": "NA"
+  },
+  "large_scale": {
+    "split_count_equal": true,
+    "split_abs_diff": [0, 2.2204e-16, 5.5511e-17, 7.0256e-17, 1.1102e-16, 0, 2.8866e-15],
+    "iv_abs_diff": 1.1102e-16
+  },
+  "fico_workflow": {
+    "train_auc_r": 0.7528,
+    "train_auc_py": 0.7543,
+    "train_auc_abs_diff": 0.0015
+  },
+  "telco_workflow": {
+    "test_auc_r": 0.6941,
+    "test_auc_py": 0.6642,
+    "test_auc_abs_diff": 0.0299
+  },
+  "all_match": false
+}

@@ -1,0 +1,75 @@
+---
+title: "optbinningR Tutorial: Binary Target (Python-style workflow)"
+output: rmarkdown::html_document
+---
+
+This tutorial follows the structure of the official Python binary tutorial using native R APIs.
+
+```r
+library(optbinningR)
+```
+
+## 1) Load data
+
+```r
+# Parity-friendly breast cancer sample shipped with the package.
+d <- read.csv(system.file("extdata", "breast_cancer_mean_radius.csv", package = "optbinningR"))
+x <- d$x
+y <- d$y
+```
+
+## 2) Instantiate and fit
+
+```r
+optb <- OptimalBinning(name = "mean radius", dtype = "numerical")
+optb <- fit(
+  optb,
+  x = x,
+  y = y,
+  algorithm = "optimal",
+  solver = "native",
+  prebinning_method = "cart",
+  max_n_prebins = 20,
+  max_n_bins = NULL,
+  min_bin_size = 0.05,
+  monotonic_trend = "auto"
+)
+
+optb$status
+optb$splits
+```
+
+## 3) Build binning table
+
+```r
+binning_table <- binning_table(optb)
+bt <- build(binning_table)
+bt
+```
+
+## 4) Information and analysis
+
+```r
+information(optb, print_level = 1)
+analysis(optb)
+```
+
+## 5) Plot: default binning table style
+
+```r
+plot(optb, type = "binning")
+```
+
+## 6) Plot: WoE view
+
+```r
+plot(optb, type = "woe")
+```
+
+## 7) Transform values
+
+```r
+x_woe <- transform(optb, x, metric = "woe")
+x_bins <- transform(optb, x, metric = "bins")
+head(data.frame(x = x, bin = x_bins, woe = x_woe))
+```

@@ -1,0 +1,386 @@
+{
+  "dataset": "mixed_suite",
+  "n": 569,
+  "target_column": "target",
+  "cases": [
+    {
+      "id": "mean_radius_default",
+      "dtype": "numerical",
+      "variable": "mean radius",
+      "data_file": "breast_cancer_full.csv",
+      "x_column": "mean radius",
+      "y_column": "target",
+      "special_codes": null,
+      "params": {
+        "monotonic_trend": "auto",
+        "max_n_bins": null,
+        "max_n_prebins": 20,
+        "min_prebin_size": 0.05
+      },
+      "status": "OPTIMAL",
+      "iv_total": 5.043925466321346,
+      "n_bins_core": 7,
+      "event_rate_core": [
+        0.9745762711864406,
+        0.9620253164556962,
+        0.8970588235294118,
+        0.7959183673469388,
+        0.6626506024096386,
+        0.18518518518518517,
+        0.00847457627118644
+      ],
+      "woe_core": [
+        -3.125170332587511,
+        -2.7109715445105946,
+        -1.6438142080103724,
+        -0.8398270460279743,
+        -0.15397916794964062,
+        2.002754048031842,
+        5.283323441905383
+      ],
+      "splits": [
+        11.425000190734863,
+        12.329999923706055,
+        13.09499979019165,
+        13.704999923706055,
+        15.045000076293945,
+        16.925000190734863
+      ]
+    },
+    {
+      "id": "mean_perimeter_default",
+      "dtype": "numerical",
+      "variable": "mean perimeter",
+      "data_file": "breast_cancer_full.csv",
+      "x_column": "mean perimeter",
+      "y_column": "target",
+      "special_codes": null,
+      "params": {
+        "monotonic_trend": "auto",
+        "max_n_bins": null,
+        "max_n_prebins": 20,
+        "min_prebin_size": 0.05
+      },
+      "status": "OPTIMAL",
+      "iv_total": 5.392233451801151,
+      "n_bins_core": 7,
+      "event_rate_core": [
+        0.9787234042553191,
+        0.9397590361445783,
+        0.9361702127659575,
+        0.8032786885245902,
+        0.5652173913043478,
+        0.19047619047619047,
+        0.007936507936507936
+      ],
+      "woe_core": [
+        -3.307491889381464,
+        -2.226121407147865,
+        -2.164427838142526,
+        -0.8857641412149996,
+        0.2587852426401357,
+        1.9680684900439518,
+        5.349463244409928
+      ],
+      "splits": [
+        75.01499938964844,
+        81.75,
+        85.25,
+        90.11499786376953,
+        98.75500106811523,
+        108.60000228881836
+      ]
+    },
+    {
+      "id": "mean_area_default",
+      "dtype": "numerical",
+      "variable": "mean area",
+      "data_file": "breast_cancer_full.csv",
+      "x_column": "mean area",
+      "y_column": "target",
+      "special_codes": null,
+      "params": {
+        "monotonic_trend": "auto",
+        "max_n_bins": null,
+        "max_n_prebins": 20,
+        "min_prebin_size": 0.05
+      },
+      "status": "OPTIMAL",
+      "iv_total": 5.042022816397354,
+      "n_bins_core": 7,
+      "event_rate_core": [
+        0.9719626168224299,
+        0.9491525423728814,
+        0.93,
+        0.8043478260869565,
+        0.6705882352941176,
+        0.17307692307692307,
+        0.008333333333333333
+      ],
+      "woe_core": [
+        -3.02462910336564,
+        -2.4055898949594123,
+        -2.0655398369903173,
+        -0.8925438282003787,
+        -0.18969725055171927,
+        2.0851250454649697,
+        5.300273000219156
+      ],
+      "splits": [
+        390.6000061035156,
+        440.8000030517578,
+        529.8000183105469,
+        576.7000122070312,
+        696.25,
+        883.25
+      ]
+    },
+    {
+      "id": "mean_smoothness_default",
+      "dtype": "numerical",
+      "variable": "mean smoothness",
+      "data_file": "breast_cancer_full.csv",
+      "x_column": "mean smoothness",
+      "y_column": "target",
+      "special_codes": null,
+      "params": {
+        "monotonic_trend": "auto",
+        "max_n_bins": null,
+        "max_n_prebins": 20,
+        "min_prebin_size": 0.05
+      },
+      "status": "OPTIMAL",
+      "iv_total": 0.9074172146999825,
+      "n_bins_core": 6,
+      "event_rate_core": [
+        0.9512195121951219,
+        0.8,
+        0.5974842767295597,
+        0.5175438596491229,
+        0.40350877192982454,
+        0.2978723404255319
+      ],
+      "woe_core": [
+        -2.449264958462074,
+        -0.865144854012264,
+        0.1261556988667577,
+        0.4509452484343777,
+        0.9120158157946385,
+        1.3785997389588482
+      ],
+      "splits": [
+        0.0815650001168251,
+        0.08946499973535538,
+        0.09996499866247177,
+        0.10830000042915344,
+        0.11589999869465828
+      ]
+    },
+    {
+      "id": "mean_compactness_default",
+      "dtype": "numerical",
+      "variable": "mean compactness",
+      "data_file": "breast_cancer_full.csv",
+      "x_column": "mean compactness",
+      "y_column": "target",
+      "special_codes": null,
+      "params": {
+        "monotonic_trend": "auto",
+        "max_n_bins": null,
+        "max_n_prebins": 20,
+        "min_prebin_size": 0.05
+      },
+      "status": "OPTIMAL",
+      "iv_total": 2.5005016959150876,
+      "n_bins_core": 7,
+      "event_rate_core": [
+        0.9787234042553191,
+        0.8807947019867549,
+        0.7605633802816901,
+        0.5119047619047619,
+        0.32051282051282054,
+        0.14285714285714285,
+        0.08163265306122448
+      ],
+      "woe_core": [
+        -3.307491889381464,
+        -1.478827863217962,
+        -0.6346211954004316,
+        0.47352145811837204,
+        1.2725655957915474,
+        2.3129089763356814,
+        2.9415176357580557
+      ],
+      "splits": [
+        0.05610499903559685,
+        0.08346499875187874,
+        0.10215000063180923,
+        0.12305000051856041,
+        0.15525000542402267,
+        0.18369999527931213
+      ]
+    },
+    {
+      "id": "mean_radius_desc_max6",
+      "dtype": "numerical",
+      "variable": "mean radius",
+      "data_file": "breast_cancer_full.csv",
+      "x_column": "mean radius",
+      "y_column": "target",
+      "special_codes": null,
+      "params": {
+        "monotonic_trend": "descending",
+        "max_n_bins": 6,
+        "max_n_prebins": 20,
+        "min_prebin_size": 0.05
+      },
+      "status": "OPTIMAL",
+      "iv_total": 5.032090843942092,
+      "n_bins_core": 6,
+      "event_rate_core": [
+        0.9695431472081218,
+        0.8970588235294118,
+        0.7959183673469388,
+        0.6626506024096386,
+        0.18518518518518517,
+        0.00847457627118644
+      ],
+      "woe_core": [
+        -2.9393644517109507,
+        -1.6438142080103724,
+        -0.8398270460279743,
+        -0.15397916794964062,
+        2.002754048031842,
+        5.283323441905383
+      ],
+      "splits": [
+        12.329999923706055,
+        13.09499979019165,
+        13.704999923706055,
+        15.045000076293945,
+        16.925000190734863
+      ]
+    },
+    {
+      "id": "mean_compactness_desc_max6",
+      "dtype": "numerical",
+      "variable": "mean compactness",
+      "data_file": "breast_cancer_full.csv",
+      "x_column": "mean compactness",
+      "y_column": "target",
+      "special_codes": null,
+      "params": {
+        "monotonic_trend": "descending",
+        "max_n_bins": 6,
+        "max_n_prebins": 20,
+        "min_prebin_size": 0.05
+      },
+      "status": "OPTIMAL",
+      "iv_total": 2.4803701594405547,
+      "n_bins_core": 6,
+      "event_rate_core": [
+        0.9787234042553191,
+        0.8807947019867549,
+        0.7605633802816901,
+        0.5119047619047619,
+        0.32051282051282054,
+        0.10989010989010989
+      ],
+      "woe_core": [
+        -3.307491889381464,
+        -1.478827863217962,
+        -0.6346211954004316,
+        0.47352145811837204,
+        1.2725655957915474,
+        2.6130135687860196
+      ],
+      "splits": [
+        0.05610499903559685,
+        0.08346499875187874,
+        0.10215000063180923,
+        0.12305000051856041,
+        0.15525000542402267
+      ]
+    },
+    {
+      "id": "mean_radius_missing_special",
+      "dtype": "numerical",
+      "variable": "mean radius",
+      "data_file": "breast_cancer_mean_radius_missing_special.csv",
+      "x_column": "x",
+      "y_column": "y",
+      "special_codes": [
+        -999.0
+      ],
+      "params": {
+        "monotonic_trend": "auto",
+        "max_n_bins": null,
+        "max_n_prebins": 20,
+        "min_prebin_size": 0.05
+      },
+      "status": "OPTIMAL",
+      "iv_total": 4.705486207963463,
+      "n_bins_core": 8,
+      "event_rate_core": [
+        0.9727272727272728,
+        0.9411764705882353,
+        0.9315068493150684,
+        0.9310344827586207,
+        0.7571428571428571,
+        0.64,
+        0.16981132075471697,
+        0.008928571428571428
+      ],
+      "woe_core": [
+        -3.053067038686174,
+        -2.2514392151321547,
+        -2.0889202856343805,
+        -2.081540178336756,
+        -0.6159290623882788,
+        -0.05421463779593527,
+        2.1081145636896683,
+        5.23067970841996
+      ],
+      "splits": [
+        11.425000190734863,
+        11.805000305175781,
+        12.775000095367432,
+        13.09499979019165,
+        14.149999618530273,
+        15.045000076293945,
+        16.925000190734863
+      ]
+    },
+    {
+      "id": "categorical_synthetic",
+      "dtype": "categorical",
+      "variable": "x_cat",
+      "data_file": "categorical_synthetic.csv",
+      "x_column": "x",
+      "y_column": "y",
+      "special_codes": null,
+      "params": {
+        "monotonic_trend": "auto",
+        "max_n_bins": null,
+        "max_n_prebins": 20,
+        "min_prebin_size": 0.05
+      },
+      "status": "OPTIMAL",
+      "iv_total": 1.8227741983921113,
+      "n_bins_core": 4,
+      "event_rate_core": [
+        0.2,
+        0.5,
+        0.75,
+        0.95
+      ],
+      "woe_core": [
+        1.791759469228055,
+        0.4054651081081644,
+        -0.6931471805599456,
+        -2.5389738710582774
+      ],
+      "splits": []
+    }
+  ]
+}

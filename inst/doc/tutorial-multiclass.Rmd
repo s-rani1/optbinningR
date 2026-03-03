@@ -1,0 +1,79 @@
+---
+title: "optbinningR Tutorial: Multiclass Target (Python-style workflow)"
+output: rmarkdown::html_document
+---
+
+This tutorial mirrors the official multiclass tutorial flow using native R.
+
+```r
+library(optbinningR)
+```
+
+## 1) Load data
+
+```r
+wine <- read.csv(system.file("extdata", "wine_multiclass.csv", package = "optbinningR"), check.names = FALSE)
+x <- wine[["ash"]]
+y <- wine[["target"]]
+```
+
+## 2) Instantiate and fit
+
+```r
+optb <- MulticlassOptimalBinning(name = "ash", dtype = "numerical")
+optb <- fit(
+  optb,
+  x = x,
+  y = y,
+  algorithm = "optimal",
+  solver = "cp",
+  prebinning_method = "cart",
+  max_n_prebins = 20,
+  max_n_bins = 6,
+  min_bin_size = 0.05,
+  monotonic_trend = list("ascending", "auto", "none"),
+  min_event_rate_diff = 0.00,
+  max_pvalue = 0.95,
+  max_pvalue_policy = "consecutive",
+  user_splits = c(2.15, 2.25, 2.31, 2.60, 2.65),
+  user_splits_fixed = rep(TRUE, 5),
+  verbose = FALSE
+)
+
+optb$status
+optb$splits
+```
+
+## 3) Build binning table
+
+```r
+binning_table <- binning_table(optb)
+bt <- build(binning_table)
+bt
+```
+
+## 4) Information and analysis
+
+```r
+information(optb, print_level = 1)
+analysis(binning_table)
+```
+
+## 5) Plot default style
+
+```r
+plot(optb, metric = "event_rate", style = "bin", add_special = TRUE, add_missing = TRUE)
+```
+
+## 6) Plot with bin labels
+
+```r
+plot(optb, metric = "event_rate", style = "bin", add_special = TRUE, add_missing = TRUE, show_bin_labels = TRUE)
+```
+
+## 7) Transform values
+
+```r
+x_bins <- transform(optb, x, metric = "bins")
+head(data.frame(x = x, bin = x_bins))
+```
