@@ -85,18 +85,18 @@ Multiclass:
 
 ## Tutorials included in this repo
 
-These tutorials are written to be close to the official Python tutorial flow, including table build and plotting steps.
+These are GitHub-rendered tutorial pages (recommended for reading):
 
-- Binary target tutorial: [`inst/doc/tutorial-binary.Rmd`](inst/doc/tutorial-binary.Rmd)
-- Continuous target tutorial: [`inst/doc/tutorial-continuous.Rmd`](inst/doc/tutorial-continuous.Rmd)
-- Multiclass target tutorial: [`inst/doc/tutorial-multiclass.Rmd`](inst/doc/tutorial-multiclass.Rmd)
-- General getting started: [`inst/doc/getting-started.Rmd`](inst/doc/getting-started.Rmd)
+- Binary tutorial: [`docs/tutorials/binary.md`](docs/tutorials/binary.md)
+- Continuous tutorial: [`docs/tutorials/continuous.md`](docs/tutorials/continuous.md)
+- Multiclass tutorial: [`docs/tutorials/multiclass.md`](docs/tutorials/multiclass.md)
 
-GitHub-rendered tutorial pages:
+Source R Markdown files (for editing/running):
 
-- Binary rendered page: [`docs/tutorials/binary.md`](docs/tutorials/binary.md)
-- Continuous rendered page: [`docs/tutorials/continuous.md`](docs/tutorials/continuous.md)
-- Multiclass rendered page: [`docs/tutorials/multiclass.md`](docs/tutorials/multiclass.md)
+- Binary source: [`inst/doc/tutorial-binary.Rmd`](inst/doc/tutorial-binary.Rmd)
+- Continuous source: [`inst/doc/tutorial-continuous.Rmd`](inst/doc/tutorial-continuous.Rmd)
+- Multiclass source: [`inst/doc/tutorial-multiclass.Rmd`](inst/doc/tutorial-multiclass.Rmd)
+- Getting started source: [`inst/doc/getting-started.Rmd`](inst/doc/getting-started.Rmd)
 
 ## Current scope
 
