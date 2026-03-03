@@ -106,6 +106,19 @@ Source R Markdown files (for editing/running):
 
 See [`CRAN_RELEASE_CHECKLIST.md`](CRAN_RELEASE_CHECKLIST.md).
 
+## Contributing
+
+Contributions are welcome via pull requests.  
+For substantial changes, please open an issue first to discuss scope and approach.
+
+## Issues
+
+Bug reports and feature requests: [GitHub Issues](https://github.com/s-rani1/optbinningR/issues)
+
+## Support
+
+If this project is useful for your work, please consider starring the repository: [s-rani1/optbinningR](https://github.com/s-rani1/optbinningR)
+
 ## Relationship to Python `optbinning`
 
 - Upstream project (reference): [optbinning GitHub](https://github.com/guillermo-navas-palencia/optbinning)
