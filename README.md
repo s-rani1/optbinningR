@@ -6,13 +6,6 @@
 
 This is an independent implementation for the R community, inspired by the Python package `optbinning`, but rewritten for R users and R package conventions.
 
-## Relationship to Python `optbinning`
-
-- Upstream project (reference): [optbinning GitHub](https://github.com/guillermo-navas-palencia/optbinning)
-- Upstream docs/tutorials: [optbinning documentation](https://gnpalencia.org/optbinning/)
-
-`optbinningR` references the upstream methodology and tutorials, but the package code here is reimplemented in R for direct R usage.
-
 ## Install
 
 CRAN (after acceptance):
@@ -112,6 +105,13 @@ Source R Markdown files (for editing/running):
 ## CRAN and release notes
 
 See [`CRAN_RELEASE_CHECKLIST.md`](CRAN_RELEASE_CHECKLIST.md).
+
+## Relationship to Python `optbinning`
+
+- Upstream project (reference): [optbinning GitHub](https://github.com/guillermo-navas-palencia/optbinning)
+- Upstream docs/tutorials: [optbinning documentation](https://gnpalencia.org/optbinning/)
+
+`optbinningR` references the upstream methodology and tutorials, but the package code here is reimplemented in R for direct R usage.
 
 ## Citation and attribution
 
