@@ -69,6 +69,20 @@ build(bt)
 plot(ob, type = "woe")
 ```
 
+## Plot previews
+
+Binary:
+
+![Binary tutorial plot](docs/images/tutorial-binary.png)
+
+Continuous:
+
+![Continuous tutorial plot](docs/images/tutorial-continuous-default.png)
+
+Multiclass:
+
+![Multiclass tutorial plot](docs/images/tutorial-multiclass-default.png)
+
 ## Tutorials included in this repo
 
 These tutorials are written to be close to the official Python tutorial flow, including table build and plotting steps.
@@ -77,7 +91,12 @@ These tutorials are written to be close to the official Python tutorial flow, in
 - Continuous target tutorial: [`inst/doc/tutorial-continuous.Rmd`](inst/doc/tutorial-continuous.Rmd)
 - Multiclass target tutorial: [`inst/doc/tutorial-multiclass.Rmd`](inst/doc/tutorial-multiclass.Rmd)
 - General getting started: [`inst/doc/getting-started.Rmd`](inst/doc/getting-started.Rmd)
-- Multiclass target tutorial: [`inst/doc/tutorial-multiclass.Rmd`](inst/doc/tutorial-multiclass.Rmd)
+
+GitHub-rendered tutorial pages:
+
+- Binary rendered page: [`docs/tutorials/binary.md`](docs/tutorials/binary.md)
+- Continuous rendered page: [`docs/tutorials/continuous.md`](docs/tutorials/continuous.md)
+- Multiclass rendered page: [`docs/tutorials/multiclass.md`](docs/tutorials/multiclass.md)
 
 ## Current scope
 
