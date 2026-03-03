@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "optbinningR"
+version: "0.2.0"
+type: software
+license: "MIT"
+authors:
+  - family-names: "Rani"
+    given-names: "S R"
+    alias: "s-rani1"
+abstract: "Independent native R implementation of optimal binning workflows inspired by the Python optbinning package."
+keywords:
+  - optimal binning
+  - scorecard
+  - credit risk
+  - multiclass binning
+  - continuous target binning
+repository-code: "https://github.com/s-rani1/optbinningR"
+url: "https://github.com/s-rani1/optbinningR"
+references:
+  - type: software
+    title: "optbinning (Python)"
+    authors:
+      - family-names: "Navas-Palencia"
+        given-names: "Guillermo"
+    url: "https://github.com/guillermo-navas-palencia/optbinning"

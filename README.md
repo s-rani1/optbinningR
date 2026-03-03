@@ -115,4 +115,12 @@ See [`CRAN_RELEASE_CHECKLIST.md`](CRAN_RELEASE_CHECKLIST.md).
 
 ## Citation and attribution
 
-If this package helps your work, please cite this repository and also cite the original Python `optbinning` project and references listed in its documentation.
+If you use `optbinningR`, please cite:
+
+1. This repository (preferred):  
+   GitHub “Cite this repository” page: [https://github.com/s-rani1/optbinningR?tab=citation](https://github.com/s-rani1/optbinningR?tab=citation)
+2. The original `optbinning` project and references from its documentation:  
+   [https://github.com/guillermo-navas-palencia/optbinning](https://github.com/guillermo-navas-palencia/optbinning)  
+   [https://gnpalencia.org/optbinning/](https://gnpalencia.org/optbinning/)
+
+Citation metadata for this repo is defined in [`CITATION.cff`](CITATION.cff).
