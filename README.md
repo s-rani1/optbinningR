@@ -14,6 +14,8 @@ CRAN:
 install.packages("optbinningR")
 ```
 
+CRAN status: submission is currently in process of acceptance.
+
 GitHub:
 
 ```r
@@ -23,7 +25,7 @@ remotes::install_github("s-rani1/optbinningR")
 Local tarball:
 
 ```r
-install.packages("optbinningR_0.2.0.tar.gz", repos = NULL, type = "source")
+install.packages("optbinningR_0.2.1.tar.gz", repos = NULL, type = "source")
 ```
 
 ## No Python dependency for normal use
@@ -66,23 +68,23 @@ plot(ob, type = "woe")
 
 Binary:
 
-![Binary tutorial plot](docs/images/tutorial-binary.png)
+![Binary tutorial plot](https://raw.githubusercontent.com/s-rani1/optbinningR/main/docs/images/tutorial-binary.png)
 
 Continuous:
 
-![Continuous tutorial plot](docs/images/tutorial-continuous-default.png)
+![Continuous tutorial plot](https://raw.githubusercontent.com/s-rani1/optbinningR/main/docs/images/tutorial-continuous-default.png)
 
 Multiclass:
 
-![Multiclass tutorial plot](docs/images/tutorial-multiclass-default.png)
+![Multiclass tutorial plot](https://raw.githubusercontent.com/s-rani1/optbinningR/main/docs/images/tutorial-multiclass-default.png)
 
 ## Tutorials included in this repo
 
 These are GitHub-rendered tutorial pages (recommended for reading):
 
-- Binary tutorial: [`docs/tutorials/binary.md`](docs/tutorials/binary.md)
-- Continuous tutorial: [`docs/tutorials/continuous.md`](docs/tutorials/continuous.md)
-- Multiclass tutorial: [`docs/tutorials/multiclass.md`](docs/tutorials/multiclass.md)
+- Binary tutorial: [docs/tutorials/binary.md](https://github.com/s-rani1/optbinningR/blob/main/docs/tutorials/binary.md)
+- Continuous tutorial: [docs/tutorials/continuous.md](https://github.com/s-rani1/optbinningR/blob/main/docs/tutorials/continuous.md)
+- Multiclass tutorial: [docs/tutorials/multiclass.md](https://github.com/s-rani1/optbinningR/blob/main/docs/tutorials/multiclass.md)
 
 Source R Markdown files (for editing/running):
 
@@ -104,7 +106,7 @@ Source R Markdown files (for editing/running):
 
 ## CRAN and release notes
 
-See [`CRAN_RELEASE_CHECKLIST.md`](CRAN_RELEASE_CHECKLIST.md).
+See the CRAN release process documentation in the repository.
 
 ## Contributing
 
@@ -136,4 +138,4 @@ If you use `optbinningR`, please cite:
    [https://github.com/guillermo-navas-palencia/optbinning](https://github.com/guillermo-navas-palencia/optbinning)  
    [https://gnpalencia.org/optbinning/](https://gnpalencia.org/optbinning/)
 
-Citation metadata for this repo is defined in [`CITATION.cff`](CITATION.cff).
+Citation metadata for this repository is available from the GitHub citation tab.
