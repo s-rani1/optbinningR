@@ -45,6 +45,8 @@ run_telco_tutorial(
 }
 \value{A list with fitted artifacts and summary metrics.}
 \examples{
-res_f <- run_fico_tutorial(n_train = 500, n_update = 300)
-res_t <- run_telco_tutorial(n = 1200)
+\donttest{
+res_f <- run_fico_tutorial(n_train = 300, n_update = 150)
+res_t <- run_telco_tutorial(n = 600)
+}
 }

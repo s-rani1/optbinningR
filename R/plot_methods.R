@@ -19,6 +19,8 @@
 .plot_continuous_optbinning <- function(
     x, bt, metric, add_special, add_missing, style, show_bin_labels, main, xlab, ylab, ...
 ) {
+  op_local <- graphics::par(no.readonly = TRUE)
+  on.exit(graphics::par(op_local), add = TRUE)
   style <- match.arg(style, c("bin", "actual"))
   metric <- if (identical(metric, "event_rate")) "mean" else metric
   metric <- match.arg(metric, c("mean", "iv", "woe"))

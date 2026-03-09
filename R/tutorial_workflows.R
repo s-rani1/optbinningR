@@ -17,7 +17,6 @@ run_fico_tutorial <- function(
     max_n_bins = 6L,
     max_n_prebins = 20L
 ) {
-  set.seed(1201)
   solver_choice <- solver
   n_train <- as.integer(n_train)
   n_update <- as.integer(n_update)
@@ -141,7 +140,6 @@ run_telco_tutorial <- function(
     max_n_bins = 6L,
     max_n_prebins = 20L
 ) {
-  set.seed(1307)
   solver_choice <- solver
   n <- as.integer(n)
   if (n < 300L) {
