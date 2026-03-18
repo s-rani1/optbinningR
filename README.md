@@ -14,7 +14,7 @@ CRAN:
 install.packages("optbinningR")
 ```
 
-CRAN status: submission is currently in process of acceptance.
+Available on CRAN.
 
 GitHub:
 
