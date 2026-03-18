@@ -6,6 +6,12 @@
 
 This is an independent implementation for the R community, inspired by the Python package `optbinning`, but rewritten for R users and R package conventions.
 
+## Read More
+
+If you want a practical overview of why `optbinningR` was built, where it fits across industries, and what the outputs look like, see the Medium article:
+
+[Introducing optbinningR: Native Optimal Binning Is Now Easy in R](https://medium.com/@s.rani/title-introducing-optbinningr-native-optimal-binning-is-now-easy-in-r-27bbf6e41dcd)
+
 ## Install
 
 CRAN:
